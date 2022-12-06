@@ -1,0 +1,165 @@
+.body{
+  background-color: #44a6b9;
+}
+/* indie-flower-regular - latin */
+@font-face {
+	font-family: "Indie Flower";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Indie Flower"), local("IndieFlower"), url("../fonts/indie-flower-v12-latin-regular.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/indie-flower-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@font-face{ 
+		font-family: "Playfair Display"; 
+		font-size: 24px; 
+		font-style: normal; 
+		font-variant: normal; 
+		font-weight: 700; 
+		src: local("Playfair Display"), local("PlayfairDisplay"), url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("ttf")
+}
+
+
+/* dekko-regular - latin */
+@font-face {
+	font-family: "Dekko";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Dekko"), url("../fonts/dekko-v7-latin-regular.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/dekko-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+	font-family: "Playfair Display", normal;
+	background-color: #44a6b9;
+}
+h1{
+  font-family: "Playfair Display", normal;
+  color: #EBF5FB;
+}
+
+h2 {
+	font-family: "Playfair Display", normal;
+}
+h2 {
+	font-family: "Playfair Display", normal;
+}
+h3 {
+	font-family: "Playfair Display", normal;
+  color: #EBF5FB;
+}
+h4 {
+	font-family: "Playfair Display", normal;
+}
+
+h4 {
+	padding-top: 2rem;
+}
+
+
+h5 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size:medium;
+	color: #2e6d79;
+}
+h6 {
+	text-decoration: none;
+	color: #2e6d79;
+}
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; 
+  background-color: #212529;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  text-align:center;
+  padding-left: 10px;
+  padding-right:10px;
+}
+.main {
+  margin-left: 270px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  background-color: #44a6b9;
+  display:flex;
+  text-align: center;
+}
+.project-item {
+  border: 5px inset #ddd;
+  background-color:#EBF5FB;
+  border-radius: 10px;
+  width: 40%;
+  height: 100%;
+  padding:10px;
+  text-align: center;
+}
+.project-item:hover {
+  opacity: 0.65;
+}
+.window{
+  width: 100%;
+}
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.window-row{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  width: 100%;
+}
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.col {
+  flex: 1;
+  background-color: lightpink;
+  padding: 10px;
+}
+
+.row div {
+  width: 50%;
+}
+
+.noMargin {
+  margin: 0px;
+}
+
+
+
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
